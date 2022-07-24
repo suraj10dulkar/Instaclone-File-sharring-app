@@ -9,7 +9,7 @@ import camera from "./Image/camera.jpg"
 function Postview() {
     const [postData, setPostData] = useState([]);
     useEffect(()=>{
-        axios.get("http://localhost:3005/image").then((res)=>{
+        axios.get("https://suraj-file-sharing.herokuapp.com/image").then((res)=>{
             let data = res.data.reverse();
             setPostData(data);
             console.log(data);

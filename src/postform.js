@@ -20,7 +20,7 @@ const Postform = () => {
     const submitButton =  (e) => {
         e.preventDefault();
         axios({
-            url:"http://localhost:3005/add",
+            url:"https://suraj-file-sharing.herokuapp.com/add",
             method:"POST",
             data : postdata,
             headers :{
